@@ -23,7 +23,7 @@ Méthode décrite, code exécutable, tests, protocole écrit, journaux bruts rej
 
 ## Contact
 
-David Serreau — Edge Quantum 65 — 77 rue Gambetta, 65300 Lannemezan — edgequantum65@gmail.com — https://edgequantum65.fr
+David Serreau — Edge Quantum 65 — 77 rue Gambetta, 65300 Lannemezan — edgequantum65@gmail.com — https://edgequantum65.fr — ORCID https://orcid.org/0009-0006-6821-8067
 
 SIREN 422233411 · SIRET 42223341100053
 
