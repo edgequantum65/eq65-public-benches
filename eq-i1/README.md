@@ -21,13 +21,13 @@ Ce document ne donne ni le code, ni la recette d'implémentation, ni les paramè
 | Mémoire dynamique mesurée (`tracemalloc`, 30 tirages) | 33,6 Mo → 8,5 Mo, soit ×3,95 | 2026-11-04 |
 | Qualité (écart PSNR) | −0,0578 dB en moyenne, IC95 [−0,0784 ; −0,0372] dB, 168/168 | banc du 2026-10-18 au 2026-10-31 |
 | Temps, images simulées (critère ≤ 1,5×) | 4,24× plus lente, critère non atteint 0/168 | banc du 2026-10-18 au 2026-10-31 |
-| Photographies réelles | écart −0,1532 dB, IC95 [−0,2296 ; −0,0768] dB ; ratio de temps 5,43× (2 290 ms contre 428 ms), mesuré hors `tracemalloc` | 2026-11-04 |
+| Photographies réelles | écart −0,1532 dB, IC95 [−0,2296 ; −0,0768] dB ; ratio de temps moyen 5,43× sur 30 cadrages (moyenne des ratios par cadrage ; le rapport des temps moyens, 2 290 ms / 428 ms, donne 5,35×), mesuré hors `tracemalloc` | 2026-11-04 |
 
 ## 4. Limites, y compris défavorables
 
 - **Le critère de temps est raté sur tous les runs** (0/168) : la méthode est 4,24× plus lente. C'est le coût de la méthode sur ce banc.
 - Ce ×3,95 compare le pic mémoire d'une réalisation qui garde une copie entière de l'image en entiers 64 bits (8 388 608 octets sur 8 512 819 mesurés) ; il ne mesure pas la cible mémoire annoncée.
-- Aucun témoin « image constante » dans le banc long, et le débit binaire n'y est pas tracé : l'égalité de débit n'y est pas vérifiable.
+- Aucun témoin « image constante » dans le banc long, et le débit binaire n'y est pas tracé : l'égalité de débit n'y est pas vérifiable. Le type `contours` donne 100 dB des deux côtés, une valeur de repli, pas une mesure de qualité.
 - 7 revendications ne sont ni implémentées ni reliées au code, et les revendications système et produit programme ne sont pas réalisées en matériel.
 - Le statut juridique est lu sur une page d'agrégateur ; la recherche de tiers n'est pas concluante et aucun avis juridique n'est fourni.
 

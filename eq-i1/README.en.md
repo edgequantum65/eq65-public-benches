@@ -21,7 +21,7 @@ This document gives neither the code, nor the implementation recipe, nor the siz
 | Dynamically measured memory (`tracemalloc`, 30 draws) | 33.6 Mo → 8.5 Mo, i.e. ×3.95 | 2026-11-04 |
 | Quality (PSNR difference) | −0.0578 dB on average, 95% CI [−0.0784; −0.0372] dB, 168/168 | bench of 2026-10-18 to 2026-10-31 |
 | Time, simulated images (criterion ≤ 1.5×) | 4.24× slower, criterion not met 0/168 | bench of 2026-10-18 to 2026-10-31 |
-| Real photographs | difference −0.1532 dB, 95% CI [−0.2296; −0.0768] dB; time ratio 5.43× (2,290 ms versus 428 ms), measured outside `tracemalloc` | 2026-11-04 |
+| Real photographs | difference −0.1532 dB, 95% CI [−0.2296; −0.0768] dB; mean time ratio 5.43× over 30 framings (mean of per-framing ratios; the ratio of mean times, 2,290 ms / 428 ms, gives 5.35×), measured outside `tracemalloc` | 2026-11-04 |
 
 *Units as in the dossier: Mo = 10⁶ bytes, Ko = 1,024 bytes.*
 
